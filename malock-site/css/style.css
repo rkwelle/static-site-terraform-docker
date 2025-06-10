@@ -1,0 +1,406 @@
+body {
+  background-image: url(../images/bg.gif);
+  background-attachment: fixed;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1025px;
+    padding: 0px;
+  }
+}
+
+/* Remove comment for visual display of row/colums
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+}
+*/
+
+.row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+.no-left-gutter {
+  padding-left: 0;
+}
+.no-right-gutter {
+  padding-right: 0;
+}
+.row {
+  margin-bottom: 20px;
+}
+
+.navbar-brand{
+  padding: 0;
+  padding-top: 7px;
+}
+a.navbar-brand img {
+	width: 100%;
+	margin-top:0;
+	padding-top:0;
+	float:left;
+}
+.top-nav {
+    padding: 0 15px;
+}
+.top-nav>li {
+    display: inline-block;
+    float: left;
+}
+.top-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+    color: #666;
+}
+/** extra on top-nav */
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+   background: transparent;
+}
+
+.vertical-space {
+  margin-bottom: 10px;
+}
+/* main menu */
+.main-nav {
+    background: #5a8326 url("../images/nav-bg.gif") repeat-x scroll 0 0;
+    font-family: arial,verdana,sans-serif;
+    font-size: 13px;
+    height: 36px;
+    position: relative;
+    width: 1025px;
+    z-index: 500;
+}
+.main-nav .select {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+.main-nav .select a b {
+    background: rgba(0, 0, 0, 0) url("../images/blank_p.gif") repeat scroll right top;
+    display: block;
+    padding: 5px 30px 5px 15px;
+    text-transform: uppercase;
+}
+.main-nav .select a {
+    background: rgba(0, 0, 0, 0) url("../images/blank_p.gif") repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    float: left;
+    height: 36px;
+    line-height: 25px;
+    padding: 0 0 0 15px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.main-nav .select li:hover a b, .main-nav .select li.current_page_item a b {
+    background: rgba(0, 0, 0, 0) url("../images/blank_over_p.gif") repeat scroll right top;
+    cursor: pointer;
+    display: block;
+    padding: 5px 30px 5px 15px;
+}
+.main-nav .select li:hover a, .main-nav .select li.current_page_item a  {
+    background: rgba(0, 0, 0, 0) url("../images/blank_over_p.gif");
+    padding: 0 0 0 15px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.submenu-wrap {
+  background: #dbe3ee;
+  padding-bottom: 15px;
+
+}
+.submenu {
+   border-top: 1px solid #ffffff;
+    margin: 0 10px;
+}
+#submenu-header {
+  color: #00327b;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.submenu-wrap ul.submenu {
+    list-style: outside none none;
+    padding: 0;
+}
+.submenu-wrap ul.submenu li {
+    border-bottom: 1px solid #ffffff;
+    padding: 6px 0;
+}
+.submenu-wrap ul.submenu li a {
+    color: #666;
+    text-decoration: none;
+    font-weight: bold;
+}
+.submenu-wrap ul.submenu li a:hover {
+    color: #1090d9;
+}
+.page-holder {
+  padding-right: 15px;
+  border-right: 1px solid #e7e7e7;
+  margin-bottom: 20px;
+}
+.page-holder.home h1 {
+  margin-top: 0;
+}
+span.welcome {
+  color: #df220e;
+}
+.page-holder h1,
+.page-holder h2,
+.page-holder h3 {
+   font-weight: bold;
+   color: #3352A4;
+}
+.page-holder h1{
+  font-size: 30px;
+}
+.page-holder h2{
+  font-size: 25px;
+}
+.vision-home {
+  margin-top: 40px;
+}
+.vision-box {
+  margin-top: 135px;
+}
+.vision-box .msg {
+  text-align: right;
+  font-style: italic;
+}
+.vision-box .msg p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer {
+  color: #fff;
+  background: #2c6cb3;
+  padding-top: 10px;
+}
+.footer p a {
+  color: #fff;
+  text-decoration: underline;
+}
+a.imageHolder {
+  position: relative;
+  display: block;
+  float: left; /* fit the anchor to content width after making it block  esp. IE */
+}
+a.imageHolder .caption {
+  position: absolute;
+  width: 235px;
+  bottom: 0px;
+  left: 0px;
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  opacity: 0.6;
+  filter:alpha(opacity=60); /* IE transparency */
+}
+a.imageHolder:hover .caption {
+  opacity: 1;
+  filter:alpha(opacity=100); /* IE transparency */
+}
+/* The Nivo Slider styles */
+.nivoSlider {
+  position:relative;
+  width:100%;
+  height:auto;
+  overflow: hidden;
+}
+.nivoSlider img {
+  position:absolute;
+  top:0px;
+  left:0px;
+  max-width: none;
+}
+.nivo-main-image {
+  display: block !important;
+  position: relative !important; 
+  width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  border:0;
+  padding:0;
+  margin:0;
+  z-index:6;
+  display:none;
+  background:white; 
+  filter:alpha(opacity=0); 
+  opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+  display:block;
+  position:absolute;
+  z-index:5;
+  height:100%;
+  top:0;
+}
+.nivo-box {
+  display:block;
+  position:absolute;
+  z-index:5;
+  overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+  position:absolute;
+  left:0px;
+  bottom:0px;
+  background:#000;
+  color:#fff;
+  width:100%;
+  z-index:8;
+  padding: 5px 10px;
+  opacity: 0.8;
+  overflow: hidden;
+  display: none;
+  -moz-opacity: 0.8;
+  filter:alpha(opacity=8);
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+  padding:5px;
+  margin:0;
+}
+.nivo-caption a {
+  display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+  position:absolute;
+  top:45%;
+  z-index:9;
+  cursor:pointer;
+}
+.nivo-prevNav {
+  left:0px;
+}
+.nivo-nextNav {
+  right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+  text-align:center;
+  padding: 15px 0;
+}
+.nivo-controlNav a {
+  cursor:pointer;
+}
+.nivo-controlNav a.active {
+  font-weight:bold;
+}
+/*default theme */
+.theme-default .nivoSlider {
+  position:relative;
+  background:#fff url(loading.gif) no-repeat 50% 50%;
+    margin-bottom:10px;
+    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;
+}
+.theme-default .nivoSlider img {
+  position:absolute;
+  top:0px;
+  left:0px;
+  display:none;
+}
+.theme-default .nivoSlider a {
+  border:0;
+  display:block;
+}
+
+.theme-default .nivo-controlNav {
+  text-align: center;
+  padding: 20px 0;
+}
+.theme-default .nivo-controlNav a {
+  display:inline-block;
+  width:22px;
+  height:22px;
+  background:url(bullets.png) no-repeat;
+  text-indent:-9999px;
+  border:0;
+  margin: 0 2px;
+}
+.theme-default .nivo-controlNav a.active {
+  background-position:0 -22px;
+}
+
+.theme-default .nivo-directionNav a {
+  display:block;
+  width:30px;
+  height:30px;
+  background:url(arrows.png) no-repeat;
+  text-indent:-9999px;
+  border:0;
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.theme-default:hover .nivo-directionNav a { opacity: 1; }
+.theme-default a.nivo-nextNav {
+  background-position:-30px 0;
+  right:15px;
+}
+.theme-default a.nivo-prevNav {
+  left:15px;
+}
+
+.theme-default .nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.theme-default .nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.theme-default .nivo-caption a:hover {
+    color:#fff;
+}
+
+.theme-default .nivo-controlNav.nivo-thumbs-enabled {
+  width: 100%;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled a {
+  width: auto;
+  height: auto;
+  background: none;
+  margin-bottom: 5px;
+}
+.theme-default .nivo-controlNav.nivo-thumbs-enabled img {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+/* End Nivo Slider styles */
